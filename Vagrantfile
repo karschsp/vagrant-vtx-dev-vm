@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   end
   #config.vm.customize ["modifyvm", :id, "--memory", "2048"]
   config.vm.network :private_network, ip: "192.168.50.4"
-  config.vm.network :forwarded_port, guest: 80, host: 8080, auto_correct: true
+  config.vm.network :forwarded_port, guest: 80, host: 8888, auto_correct: true
 
   config.vm.box = "vagrant-centos64"
   config.vm.box_url = "http://stevekarsch.com/sites/default/files/vagrant-centos64.box"
